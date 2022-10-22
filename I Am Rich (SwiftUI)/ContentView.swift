@@ -17,7 +17,10 @@ struct ContentView: View {
                     .font(.title)
                     .fontWeight(.bold)
                 .foregroundColor(.white)
-                Image(/*@START_MENU_TOKEN@*/"Image Name"/*@END_MENU_TOKEN@*/)
+                Image("diamond")
+                    .resizable()
+                    .frame(width: 200, height: 200, alignment: .center)
+                    .aspectRatio(contentMode: .fit)
             }
         }
     }
